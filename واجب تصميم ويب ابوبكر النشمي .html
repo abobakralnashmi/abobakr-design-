@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ar" long="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وضاح شعبان للعسل اليمني</title>
+    <style type="text/css">
+    
+    body {
+    background-color: #F0E68C; /* لون أصفر فاتح يشبه لون العسل */
+    }
+    
+    .section-title {
+    background-color: #666666; /* لون بني غامق يشبه لون الخلية */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    }
+    
+    .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    background-image: url('خلية_النحل.png'); /* صورة خلفية لخلية النحل */
+    background-size: cover;
+    }
+    
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff3e6;
+            color: #333;
+            te
+        }
+
+        header {
+            background: #ffa500; /* لون جذاب */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .slider {
+            position: relative;
+            overflow: hidden;
+            height: 300px;
+            margin: 20px 0;
+        }
+
+        .slider img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section  h2 products-title{
+        display:inline;
+        margin:0 15px;
+        text-algin:center;
+        }
+
+        footer {
+            text-align: center;
+            background: #ffa500;
+            padding: 10px;
+            color: white;
+        }
+
+        .product-list,
+        .blog-posts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product,
+        .blog-post {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: calc(30% - 20px);
+            transition: transform 0.3s;
+        }
+
+        .product:hover,
+        .blog-post:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .product,
+            .blog-post {
+                width: calc(100% - 20px);
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+            background-color: #f8d7a0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        form input,
+        form textarea {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #ffa500;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+
+        form button:hover {
+            background-color: #e68a00;
+        }
+
+        .lang-buttons {
+            margin: 10px 0;
+        }
+
+        .lang-buttons button {
+            margin: 0 5px;
+            background-color: #f8d7a0;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .lang-buttons button:hover {
+            background-color: #e3c69a;
+        }
+        header{
+        backgrond-color:0ffff;
+        color:fffff;
+        }
+        body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+        }
+        .social-links {
+        display: flex;
+        gap: 20px;
+        }
+        .social-link {
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        }
+        .social-link img {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body  dir="rtl">
+    <header>
+    <form id="logo">
+        <div class="logo" id="logo">وضاح شعبان للعسل اليمني</div>
+        </form>
+        <div class="lang-buttons">
+            <button onclick="setLanguage('ar')">العربية</button>
+            <button onclick="setLanguage('en')">English</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a  href="#home" id="nav_home">الرئيسية</a></li>
+                <li><a href="#products" id="nav-products">المنتجات</a></li>
+                <li><a href="#benefits" id="nav-benefits">فوائد العسل</a></li>
+                <li><a href="#blog" id="nav-blog">مدونة</a></li>
+                <li><a href="#contact" id="nav-contact">اتصل بنا</a></li>
+                <li><a href="#shop" id="nav-shop">المتجر</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+    <form id="logo">
+        <h1 id="home-title">مرحبًا بكم في موقع وضاح شعبان للعسل اليمني</h1>
+       </form> 
+        <p>نقدم لكم أفضل أنواع العسل اليمني الطبيعي، المستخرج من أزهار متنوعة، مصحوبة بفوائد صحية مذهلة.</p>
+        <div class="slider">
+        <a href="#abobakr" >
+            <img src="abobakr//aaaaaa.jpg" alt="عسل يمني" width="200" hadith="200"></a>
+            <img src="abobakr//٢٠٢٤٠٩٢٠_٢٢٠٧١٤.jpg" alt="عسل بلدي" width="200" hadith="200">
+            <img src="abobakr//٢٠٢٤٠٩٢٠_٢١٥٧٥٠.jpg" alt="عسل السمر" width="200" hadith="200">
+            <img src="abobakr//٢٠٢٤٠٩٢٠_٢١٥٨٠٤.jpg" alt="عسل سدر" width="200" hadith="200m">
+            <a href="#abobakr2" >
+            <img src="abobakr//٢٠٢٤٠٩٢٠_٢١٥٩٠٣.jpg"  alt="فوائد ومميزات عسل السمر">
+            </a>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2 id="products-title" style="center">أنواع العسل</h2>
+        <p>استمتع بتجربة فريدة مع أفضل أنواع العسل اليمني التي تقدمها علامتنا.</p>
+        <div class="product-list">
+            <div class="product">
+                <h3 id="product1-title">عسل سدر</h3>
+                <p id="product1-desc">عسل طبيعي من شجرة السدر، معروف بفوائده الصحية المذهلة، مثل تعزيز المناعة وتحسين الهضم.</p>
+            <img src="abobakr//IrWFpJlGWUIZ1uTlymbmAKWRQikycR4DQgAtQvS4.jpg" alt="عسل سدر " width="200"hadith="200">
+           <p>
+           عسل السدر يعتبر اجود 
+           واغلى انواع العس
+           ل مقارنة بعسل ال
+           زهور وعسل المراعي الاخرى,ولعس
+           ل السدر فوائد كثيرة يحرص 
+           على تناوله الكثير ممن ين
+           شدون الصحة. ويتميز عسل السدر 
+           بطعمه المختلف عن بقية الانواع وله
+            نكهة تختلف عن كل نكهات انواع ال
+            عسل الاخرى ويعتبر عسل السدر 
+            علاجا ناجعا لكثير من الامراض خصوصا الكبد 
+            </p>
+            
+            <div class="product">
+            <img src="abobakr//٢٠٢٤٠٩٢٠_٢٢٠٧١٤.jpg" alt="عسل زهور"width="300" hadith="200">
+            <h3>عسل السدر</h3>
+            <p>عسل مستوحئ  من الطبيعه.</p>
+            <p>السعر: 12$</p>
+            <button>أضف إلى السلة</button>
+            </div>
+            <div class="product">
+                <h3 id="product2-title">عسل بلدي</h3>
+                <img src="abobakr//images (13).jpeg" alt="عسل بلدي" width="300" hadith="200">
+                <p id="product2-desc">عسل تقليدي محلي، يتميز بمذاقه الفريد وفوائده الصحية المتعددة، مثل مكافحة الالتهابات.</p>
+            
+            <div class="product">
+            <img src="abobakr//٢٠٢٤٠٩٢٠_٢١٥٨٠٤.jpg" alt="عسل زهور" width="300px" hadith="200px">
+            <h3>عسل زهور</h3>
+            <p>عسل مستخرج من الطبيعة .</p>
+            <p>السعر: 12$</p>
+            <button>أضف إلى السلة</button>
+            
+            </div>
+            <div class="product">
+                <h3 id="product3-title">عسل زهور</h3>
+                
+               <p id="product3-desc">عسل مستخرج من أزهار متنوعة، مناسب لجميع الاستخدامات، سواء في الطهي أو العناية بالبشرة.</p>
+            
+        
+            <img src="abobakr//abobakr.jpg" alt="عسل زهور" width="300" hadith="200">
+    
+            <p>عسل الزهور يقي من فقر الدم وذلك عن طريق زيادة نسبة الهيموجلوبين في الدم، ولذلك ينصح من يعانون بفقر في الدم بتناول هذا النوع من العسل بهدف العلاج.
+            يعمل على تحسين الجهاز الهضمي ولذلك يتم استخدامه في علاج جميع مشاكل الجهاز الهضمي المختلفة.
+            حماية الجهاز الهضمي من الاضطرابات التي تحدث في الجهاز الهضمي مثل الإسهال.
+            يعالج سوء التغذية خاصة لدى الأطفال الصغار الذين يعانون من سوء التغذية.
+            يحمي من قرحة المعدة وجميع الآلام التي تحدث في البطن بشكل كبير جدًا.
+            يتم تناول هذا العسل بشكل شائع للحد من الإسهال الشديد.
+            يفضل أن يتم تناوله لكبار السن والرياضيين لأنه يعمل على زيادة النشاط لديهم.
+            يعالج الحساسية الموسمية مثل حساسية الربيع وغيرها</p>
+            <p>السعر: 12$</p>
+            <button>أضف إلى السلة</button>
+           
+        </div>
+    </section>
+
+    <section id="benefits">
+        <h2 id="benefits-title">فوائد العسل</h2>
+        <ul id="benefits-list">
+            <li>مضاد للبكتيريا والفيروسات.</li>
+            <li>يعزز الطاقة ويزيد من النشاط.</li>
+            <li>يساعد في تحسين الهضم.</li>
+            <li>يعمل كمهدئ للسعال.</li>
+            <li>يحتوي على مضادات أكسدة قوية تحارب الشيخوخة.</li>
+        </ul>
+    </section>
+
+    <section id="blog">
+        <h2 id="blog-title">مدونة</h2>
+        <p>تابع مدونتنا للحصول على أحدث النصائح والمعلومات حول فوائد العسل واستخداماته.</p>
+        <div class="blog-posts">
+            <div class="blog-post">
+                <h3 id="blog-post1-title"><p id="abobakr2"فوائد العسل الصحية</h3>
+                <p id="blog-post1-desc">العسل يحتوي على العديد من العناصر الغذائية التي تعزز الصحة العامة، مثل الفيتامينات والمعادن.</p>
+            </div>
+            <div class="blog-post">
+                <h3 id="blog-post2-title">كيفية استخدام العسل في العناية بالبشرة</h3>
+                <p id="blog-post2-desc">استخدام العسل في الروتين اليومي للعناية بالبشرة يمكن أن يحقق نتائج مذهلة، مثل الترطيب والتغذية.</p>
+                  <img src="abobakr//٢٠٢٤٠٩٢٠_٢١٥٨٠٤.jpg"alt="ابوبكر"  width="300px" hadith="200px">
+            </div>
+            <div class="blog-post">
+                <h3 id="blog-post3-title"><p id="abobakr"أفضل أنواع العسل في اليمن</h3></p>
+                <p id="blog-post3-desc">يعتبر اليمن موطنًا لأفضل أنواع العسل في العالم، فما هي الأنواع الأكثر شهرة؟ تعرف عليها هنا!</p>
+            </div>
+        </div> 
+        </section> 
+        <section id="about">
+        <h2>عن العسل اليمني</h2>
+        <p>العسل اليمني له فوائد صحية عديدة...</p>
+        </section>
+        
+        <section id="shop">
+        
+       <a href="https://www.google.com/#sbfbu=1&pi=" > <h2>المتجر</h2></a>
+        <p>تسوق أفضل أنواع العسل اليمني هنا.</p>
+        <p> abobakr<a href="abobakr.html" > alnashmi</a></p>
+        </section>
+    </section>
+
+    <section id="contact">
+        <h2 id="contact-title">اتصل بنا</h2>
+        <form>
+            <input type="text" placeholder="الاسم" required>
+            <input type="email" placeholder="البريد الإلكتروني" required>
+            <textarea placeholder="رسالتك" rows="4" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+        <section id="contact">
+        <h2>اتصل بنا</h2>
+        <p>للتواصل معنا، يرجى الاتصال على الرقم التالي:
+        <a href="tel:775431836">إتصل بنا :775431836</a>
+        </p>
+        </section>
+        
+        
+    </section>
+    
+    <title>روابط التواصل الاجتماعي</title>
+    
+    <h1>تابعنا على وسائل التواصل الاجتماعي</h1>
+    <div class="social-links">
+    <a class="social-link" href="https:/whatsapp.+967775431836" target="_blank">
+    <img src="images/whats.png" alt="واتساب">
+    واتساب
+    </a>
+    <a class="social-link" href="https:/facebook.com/abobakralnashmi.facebook" target="_blank">
+    <img src="images/facebook.png" alt="فيسبوك">
+    فيسبوك
+    </a>
+    <a class="social-link" href="https://www.instagram.com/ابوبكر النشمي" target="_blank">
+    <img src="images/instgram.png" alt="إنستغرام">
+    إنستغرام
+    </a>
+    </div>
+    
+    </body>
+    </html>
+    
+
+    <footer>
+        <p id="footer-text">&copy; 2024 وضاح شعبان للعسل اليمني. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script type="text/javascript">
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slider img');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === index) ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        setInterval(nextSlide, 3000);
+        showSlide(currentIndex);
+
+        function setLanguage(lang) {
+            const texts = {
+                ar: {
+                    
+                   logo: "وضاح شعبان للعسل اليمني",
+                 //   nav_home: "الرئيسية",
+                    homeTitle: "مرحبًا بكم في وضاح شعبان للعسل اليمني",
+                    productsTitle: "أنواع العسل",
+                    product1Title: "عسل سدر",
+                    product1Desc: "عسل طبيعي من شجرة السدر، معروف بفوائده الصحية المذهلة، مثل تعزيز المناعة وتحسين الهضم.",
+                    product2Title: "عسل بلدي",
+                    product2Desc: "عسل تقليدي محلي، يتميز بمذاقه الفريد وفوائده الصحية المتعددة، مثل مكافحة الالتهابات.",
+                    product3Title: "عسل زهور",
+                    product3Desc: "عسل مستخرج من أزهار متنوعة، مناسب لجميع الاستخدامات، سواء في الطهي أو العناية بالبشرة.",
+                    benefitsTitle: "فوائد العسل",
+                    blogTitle: "مدونة",
+                    blogPost1Title: "فوائد العسل الصحية",
+                    blogPost1Desc: "العسل يحتوي على العديد من العناصر الغذائية التي تعزز الصحة العامة، مثل الفيتامينات والمعادن.",
+                    blogPost2Title: "كيفية استخدام العسل في العناية بالبشرة",
+                    blogPost2Desc: "استخدام العسل في الروتين اليومي للعناية بالبشرة يمكن أن يحقق نتائج مذهلة، مثل الترطيب والتغذية.",
+                    blogPost3Title: "أفضل أنواع العسل في اليمن",
+                    blogPost3Desc: "يعتبر اليمن موطنًا لأفضل أنواع العسل في العالم، فما هي الأنواع الأكثر شهرة؟ تعرف عليها هنا!",
+                    contactTitle: "اتصل بنا",
+                    footerText: "&copy; 2024 وضاح شعبان للعسل اليمني. جميع الحقوق محفوظة."
+                },
+                en: {
+                    logo: "Wadah Shaaban for Yemeni Honey",
+                  //  nav_home:"home",
+                    homeTitle: "Welcome to Wadah Shaaban for Yemeni Honey",
+                    productsTitle: "Types of Honey",
+                    product1Title: "Sidr Honey",
+                    product1Desc: "Natural honey from the Sidr tree, known for its amazing health benefits, such as boosting immunity and improving digestion.",
+                    product2Title: "Local Honey",
+                    product2Desc: "Traditional local honey, characterized by its unique taste and multiple health benefits, such as fighting inflammation.",
+                    product3Title: "Flower Honey",
+                    product3Desc: "Honey extracted from various flowers, suitable for all uses, whether in cooking or skincare.",
+                    benefitsTitle: "Benefits of Honey",
+                    blogTitle: "Blog",
+                    blogPost1Title: "Health Benefits of Honey",
+                    blogPost1Desc: "Honey contains many nutrients that enhance overall health, such as vitamins and minerals.",
+                    blogPost2Title: "How to Use Honey in Skincare",
+                    blogPost2Desc: "Using honey in your daily skincare routine can yield amazing results, such as hydration and nourishment.",
+                    blogPost3Title: "Best Types of Honey in Yemen",
+                    blogPost3Desc: "Yemen is home to the best types of honey in the world. What are the most famous types? Find out here!",
+                    contactTitle: "Contact Us",
+                    footerText: "&copy; 2024 Wadah Shaaban for Yemeni Honey. All rights reserved."
+                }
+            };
+
+            const text = texts[lang];
+            document.getElementById("logo").innerText = text.logo;
+        //    document.getElementById("nav-home").innerText=text.nav_home;
+            document.getElementById("home-title").innerText = text.homeTitle;
+            document.getElementById("products-title").innerText = text.productsTitle;
+            document.getElementById("product1-title").innerText = text.product1Title;
+            document.getElementById("product1-desc").innerText = text.product1Desc;
+            document.getElementById("product2-title").innerText = text.product2Title;
+            document.getElementById("product2-desc").innerText = text.product2Desc;
+            document.getElementById("product3-title").innerText = text.product3Title;
+            document.getElementById("product3-desc").innerText = text.product3Desc;
+            document.getElementById("benefits-title").innerText = text.benefitsTitle;
+            document.getElementById("blog-title").innerText = text.blogTitle;
+            document.getElementById("blog-post1-title").innerText = text.blogPost1Title;
+            document.getElementById("blog-post1-desc").innerText = text.blogPost1Desc;
+            document.getElementById("blog-post2-title").innerText = text.blogPost2Title;
+            document.getElementById("blog-post2-desc").innerText = text.blogPost2Desc;
+            document.getElementById("blog-post3-title").innerText = text.blogPost3Title;
+            document.getElementById("blog-post3-desc").innerText = text.blogPost3Desc;
+            document.getElementById("contact-title").innerText = text.contactTitle;
+            document.getElementById("footer-text").innerHTML = text.footerText;
+        }
+    </script>
+    <!----<div style="height:100px;">--
+    اتصل بنا</div>
+    -->
+    <div><label for="color">لونك المفضل </label>
+    <input type="color" id="set_color">
+    </div>
+    <input type="checkbox" value="احمر"id="rol">
+    <label for="rol" >احمر</label><br>
+</body>
+
+</html>
